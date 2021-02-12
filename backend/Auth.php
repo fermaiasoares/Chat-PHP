@@ -1,26 +1,19 @@
 <?php
 
-require_once 'Global.php';
+require_once ('Global.php');
+
 
 class Auth
 {
-  private $conexao_global;
+  private $conexao;
 
-  public function __construct (FunctionGlobal $conexao_global)
+  public function __construct(GlobalFunction $conexao)
   {
-      $this->conexao_global = $conexao_global;
-  }
-
-  public function openDb()
-  {
-    $connect = $this->conexao_global->conexao("localhost", "chat", "diego", "root@123");
-    return $connect;
+    $this->conexao = $conexao->conexao('localhost', 'chat', 'diego', 'root@123');
   }
 
 }
 
 
-$global = new FunctionGlobal();
-
+$global = new GlobalFunction();
 $auth = new Auth($global);
-$auth->openDb();

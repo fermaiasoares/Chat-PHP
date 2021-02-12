@@ -1,24 +1,18 @@
 <?php
 
-class FunctionGlobal
+
+class GlobalFunction
 {
-  public $host;
-  public $db;
-  public $user;
-  public $password;
 
   public function conexao ($host, $db, $user, $password)
   {
-      try {
-        $pdo = new PDO('mysql:host='. $host .'; dbname=' .$db, $user, $password);
-        return $pdo;
-      } catch (\PDOException $e) {
-        $e->getMessage(). '<br>';
-        $e->getLine(). '<br>';
-        $e->getCode(). '<br>';
-      }
-      return false;
-  }
+     try {
+        return new PDO("mysql:host=$host; dbname=$db", "$user", $password);
+     } catch (\PDOException $e) {
+        echo $e->getMessage(). '<br>';
+        echo $e->getLine();
+     }
 
+  }
 
 }
