@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Logar/Criar</title>
-    <link rel="icon" type="image/png" href="img/favicon.png" />
-    <link type="text/css" rel="stylesheet" href="style/auth.css">
-    <script src="js/jquery-3.5.1.min.js"></script>
+    <link rel="icon" type="image/png" href="../../public/img/img/favicon.png" />
+    <link type="text/css" rel="stylesheet" href="../../public/style/auth/auth.css">
+    <script src="../../public/js/jquery-3.5.1.min.js"></script>
     <!-- Other imports -->
-    <script src="js/sweetalert2.all.min.js"></script>
-    <link rel="stylesheet" href="style/sweetalert2.min.css">
+    <script src="../../public/js/sweetalert2.all.min.js"></script>
+    <link rel="stylesheet" href="../../public/style/sweetalert2.min.css">
 </head>
 
 <body>
@@ -21,7 +20,7 @@
         <p class="title">Logar </p>
         <form method="POST" id="login">
             <input type="text" name="email" class="field" required="required" placeholder="E-mail ou username" />
-            <input type="password" name="password" class="field" required="required" placeholder="Password" />t
+            <input type="password" name="password" class="field" required="required" placeholder="Password" />
             <button>Entrar</button>
         </form>
         <p class="toogle change_auth_create" onclick="$('.register').fadeIn()">Não tenho conta</p>
