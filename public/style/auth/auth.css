@@ -1,4 +1,4 @@
-@import "global.css";
+@import "../global.css";
 
 div.bg {
      position: absolute;
@@ -47,17 +47,17 @@ div.auth input.field{
 }
 
 div.auth input[type="text"]{
-    background: url(../img/user.png) no-repeat scroll 7px 7px;
+    background: url(../../img/user.png) no-repeat scroll 7px 7px;
     background-size: 16px;
 }
 
 div.auth input[type="email"]{
-    background: url(../img/email.png) no-repeat scroll 7px 7px;
+    background: url(../../img/email.png) no-repeat scroll 7px 7px;
     background-size: 16px;
 }
 
 div.auth input[type="password"]{
-    background: url(../img/password.png) no-repeat scroll 7px 7px;
+    background: url(../../img/password.png) no-repeat scroll 7px 7px;
     background-size: 16px;
 }
 

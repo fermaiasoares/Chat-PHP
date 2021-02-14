@@ -10,7 +10,7 @@ class Auth
 
   public function __construct(GlobalFunction $conexao)
   {
-    $this->conexao = $conexao->conexao('localhost', 'chat_message', 'diego', 'root@');
+    $this->conexao = $conexao->conexao();
   }
 
 }
