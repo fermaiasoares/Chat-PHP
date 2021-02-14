@@ -1,6 +1,7 @@
 <?php
 
-require_once ('Global.php');
+require_once ('../Models/Global.php');
+
 
 
 class Auth
@@ -9,7 +10,7 @@ class Auth
 
   public function __construct(GlobalFunction $conexao)
   {
-    $this->conexao = $conexao->conexao('localhost', 'chat', 'diego', 'root@123');
+    $this->conexao = $conexao->conexao();
   }
 
 }

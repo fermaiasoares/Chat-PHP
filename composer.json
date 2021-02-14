@@ -1,0 +1,19 @@
+{ 
+	"description": "Projeto destinado a criação deum chat",
+	"authors": [
+		{
+			"name": "Diego Camilo Da Silva",
+			"email": "diegocamilo021@gmail.com"
+		}
+	],
+
+	"autoload": {
+		"psr-4": {
+			"App\\": "App/"
+		}
+	},
+
+	"require": {
+		"php": ">=5.2.8"
+	}
+}
