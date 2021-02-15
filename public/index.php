@@ -2,8 +2,8 @@
 
 require_once 'vendor/autoload.php';
 
-use App\Controller\Route;
+use App\Controller\RouteController;
 
 $path = require_once 'views/auth/index.php';
 
-$route = new Route($path);
+$route = new RouteController($path);

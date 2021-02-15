@@ -20,9 +20,9 @@
     <div class="auth login">
         <p class="title">Logar </p>
         <form method="POST" id="login">
-            <input type="text" name="email" class="field"  placeholder="E-mail ou username" />
-            <input type="password" name="password" class="field"  placeholder="Password" />
-            <button>Entrar</button>
+            <input type="text" name="email" class="field"  required placeholder="E-mail ou username" />
+            <input type="password" name="password" class="field" required  placeholder="Password" />
+            <button class="btn_submit">Entrar</button>
         </form>
         <p class="toogle change_auth_create" onclick="$('.register').fadeIn()">Não tenho conta</p>
     </div>
@@ -34,7 +34,7 @@
             <input type="email" name="email" class="field" required="required" placeholder="E-mail" />
             <input type="password" name="password" minlength="8" class="field" required="required" placeholder="Password" />
             <input type="password" name="repPassword" minlength="8" class="field" required="required" placeholder="Repetir password" />
-            <button id="criar-conta">Criar conta</button>
+            <button id="criar-conta" class="btn_submit">Criar conta</button>
         </form>
         <p class="toogle" onclick="$('.register').fadeOut()">Já tenho uma conta</p>
     </div>

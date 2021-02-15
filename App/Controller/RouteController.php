@@ -2,7 +2,7 @@
 
 namespace App\Controller;
 
-class Route 
+class RouteController 
 {
     public function __construct($path)
     {
